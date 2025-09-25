@@ -1,0 +1,341 @@
+/*-- -------------------------- -->
+<---      Diagnostic Page       -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #diagnostic-hero {
+        padding: clamp(8rem, 20vw, 12rem) 1rem clamp(4rem, 10vw, 6rem);
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    #diagnostic-hero .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    #diagnostic-hero .cs-content {
+        text-align: center;
+        width: 100%;
+        max-width: 50rem;
+    }
+
+    #diagnostic-hero .cs-title {
+        color: var(--bodyTextColorWhite);
+        margin-bottom: 1.5rem;
+    }
+
+    #diagnostic-hero .cs-text {
+        color: var(--bodyTextColorWhite);
+        opacity: 0.9;
+        font-size: clamp(1rem, 2.5vw, 1.25rem);
+    }
+
+    #diagnostic-hero .cs-hero-image {
+        width: 100%;
+        max-width: 25rem;
+        height: auto;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    #diagnostic-hero .cs-hero-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    #diagnostic-hero .cs-background-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        z-index: 1;
+    }
+
+    /* Benefits Section */
+    #diagnostic-benefits {
+        padding: var(--sectionPadding);
+        background-color: #f8f9fa;
+    }
+
+    #diagnostic-benefits .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+    }
+
+    #diagnostic-benefits .cs-content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    #diagnostic-benefits .cs-benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+    }
+
+    #diagnostic-benefits .cs-benefit-item {
+        grid-column: span 12;
+        text-align: center;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    #diagnostic-benefits .cs-benefit-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    #diagnostic-benefits .cs-benefit-icon {
+        width: 4rem;
+        height: 4rem;
+        margin: 0 auto 1.5rem;
+        background-color: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #diagnostic-benefits .cs-benefit-icon img {
+        width: 2rem;
+        height: 2rem;
+        filter: brightness(0) invert(1);
+    }
+
+    #diagnostic-benefits .cs-benefit-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--headerColor);
+        margin-bottom: 1rem;
+    }
+
+    #diagnostic-benefits .cs-benefit-text {
+        color: var(--bodyTextColor);
+        line-height: 1.6;
+    }
+
+    /* Form Section */
+    #diagnostic-form {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+    }
+
+    #diagnostic-form .cs-container {
+        width: 100%;
+        max-width: 60rem;
+        margin: auto;
+    }
+
+    #diagnostic-form .cs-form-wrapper {
+        background-color: #f8f9fa;
+        border-radius: 1.5rem;
+        padding: 3rem;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    #diagnostic-form .cs-form-content {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    #diagnostic-form .cs-diagnostic-form {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    #diagnostic-form .cs-form-row {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
+    }
+
+    #diagnostic-form .cs-label {
+        grid-column: span 12;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-weight: 600;
+        color: var(--headerColor);
+    }
+
+    #diagnostic-form .cs-input {
+        padding: 1rem;
+        border: 2px solid #e9ecef;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        background-color: #fff;
+    }
+
+    #diagnostic-form .cs-input:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(255, 106, 62, 0.1);
+    }
+
+    #diagnostic-form .cs-textarea {
+        min-height: 120px;
+        resize: vertical;
+        font-family: inherit;
+    }
+
+    #diagnostic-form .cs-select {
+        cursor: pointer;
+    }
+
+    #diagnostic-form .cs-submit-btn {
+        justify-self: center;
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        background-color: var(--primary);
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    #diagnostic-form .cs-submit-btn:hover {
+        background-color: var(--secondary);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* WhatsApp Button */
+    .cs-whatsapp-button {
+        position: fixed;
+        bottom: 2rem;
+        left: 2rem;
+        z-index: 1000;
+        animation: pulse 2s infinite;
+    }
+
+    .cs-whatsapp-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        background-color: #25d366;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+        transition: all 0.3s;
+    }
+
+    .cs-whatsapp-link:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+    }
+
+    .cs-whatsapp-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .cs-whatsapp-text {
+        font-size: 0.9rem;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #diagnostic-hero .cs-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    #diagnostic-hero .cs-content {
+        text-align: left;
+        flex: 1;
+    }
+
+    #diagnostic-hero .cs-hero-image {
+        flex: 1;
+        max-width: none;
+    }
+
+    #diagnostic-benefits .cs-benefit-item {
+        grid-column: span 4;
+    }
+
+    #diagnostic-form .cs-form-row .cs-label {
+        grid-column: span 6;
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #diagnostic-hero {
+        padding: clamp(10rem, 15vw, 15rem) 1rem clamp(6rem, 8vw, 8rem);
+    }
+
+    .cs-whatsapp-button {
+        bottom: 3rem;
+        left: 3rem;
+    }
+}
+
+/* Diagnostic Button in Navigation */
+.cs-diagnostic-btn {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%) !important;
+    color: #fff !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 2rem !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    text-decoration: none !important;
+    transition: all 0.3s !important;
+    box-shadow: 0 4px 15px rgba(255, 106, 62, 0.3) !important;
+}
+
+.cs-diagnostic-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(255, 106, 62, 0.4) !important;
+}
+
+/* Mobile Navigation Adjustments */
+@media only screen and (max-width: 63.9375rem) {
+    .cs-diagnostic-btn {
+        display: none !important;
+    }
+}

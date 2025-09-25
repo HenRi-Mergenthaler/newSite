@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="../css//estilos-servicos/servicos.css"/>
+    <link rel="stylesheet" href="../css/global_temas.css">
+</head>
+<body>
+    <!-- ============================================ -->
+<!--                 Navigation- pagina servicos                 -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="/index.html" class="cs-logo" aria-label="back to home">
+            <img src="../imgs/Horizontal-Original.png" alt="logo"aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="../index.html" class="cs-li-link">
+                            Início
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../sobre-nos.html" class="cs-li-link">
+                            Sobre Nós
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link  cs-active">
+                            Serviços
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="devsites.html" class="cs-li-link cs-drop-link">Desenvolvimento de Sites</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="devaplicativos.html" class="cs-li-link cs-drop-link">Desenvolvimento de Apps</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="devsistemas.html" class="cs-li-link cs-drop-link">Desenvolvimento de Sistemas</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="ecomer.html" class="cs-li-link cs-drop-link">E-commerce</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="detalhamento.html" class="cs-li-link cs-drop-link">Detalhamento Técnico</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="projmaquinas.html" class="cs-li-link cs-drop-link">Projetos de Máquinas</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="proto.html" class="cs-li-link cs-drop-link">Prototipagem</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="eficenerg.html" class="cs-li-link cs-drop-link">Eficiência Energética</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../diagnostico.html" class="cs-button-solid cs-diagnostic-btn">
+                            Faça um Diagnóstico Gratuito
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <div class="cs-social">
+                <a href="https://www.facebook.com/konvexjr/" class="cs-social-link" target="_blank">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://www.instagram.com/konvexjr.oficial/" class="cs-social-link" target="_blank">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://br.linkedin.com/company/konvex-jr" class="cs-social-link" target="_blank">
+                    <svg class="cs-social-icon" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382.00 382.00" xml:space="preserve" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#5c5c5c;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path> </g></svg>
+                </a>
+            </div>
+            
+        </div>
+
+</header>
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="services-hero">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">NOSSOS SERVIÇOS</span>
+            <h1 class="cs-title">Soluções Inovadoras para o Futuro</h1>
+        <p class="cs-text">
+                Desenvolvemos soluções tecnológicas avançadas nas áreas de computação, mecânica e elétrica, 
+                transformando ideias em realidade com excelência e inovação.
+            </p>
+            <div class="cs-hero-stats">
+                <div class="cs-stat-item">
+                    <span class="cs-stat-number">200+</span>
+                    <span class="cs-stat-label">Projetos Realizados</span>
+                </div>
+                <div class="cs-stat-item">
+                    <span class="cs-stat-number">29</span>
+                    <span class="cs-stat-label">Anos de Experiência</span>
+                </div>
+                <div class="cs-stat-item">
+                    <span class="cs-stat-number">100%</span>
+                    <span class="cs-stat-label">Clientes Satisfeitos</span>
+                </div>
+            </div>
+        </div>
+        <div class="cs-hero-visual">
+            <div class="cs-floating-cards">
+                <div class="cs-card cs-card-1">
+                    <img src="../imgs/icones/cpu.png" alt="Computação" class="cs-card-icon">
+                    <span class="cs-card-text">Computação</span>
+                </div>
+                <div class="cs-card cs-card-2">
+                    <img src="../imgs/icones/maquina-de-fabrica.png" alt="Mecânica" class="cs-card-icon">
+                    <span class="cs-card-text">Mecânica</span>
+                </div>
+                <div class="cs-card cs-card-3">
+                    <img src="../imgs/icones/energetico.png" alt="Elétrica" class="cs-card-icon">
+                    <span class="cs-card-text">Elétrica</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cs-background-pattern"></div>
+</section>
+<!-- ============================================ -->
+<!--                Services Categories           -->
+<!-- ============================================ -->
+
+<section id="services-categories">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">CATEGORIAS DE SERVIÇOS</span>
+            <h2 class="cs-title">Áreas de Especialização</h2>
+            <p class="cs-text">
+                Nossa equipe multidisciplinar oferece soluções completas em diferentes áreas tecnológicas, 
+                sempre com foco na inovação e excelência.
+            </p>
+        </div>
+        <div class="cs-categories-grid">
+            <div class="cs-category-card cs-computing">
+                <div class="cs-category-header">
+                    <div class="cs-category-icon">
+                        <img src="../imgs/icones/cpu.png" alt="Computação" class="cs-icon">
+                    </div>
+                    <h3 class="cs-category-title">Computação & Sistemas</h3>
+                </div>
+                <div class="cs-category-content">
+                    <p class="cs-category-description">
+                        Desenvolvemos soluções digitais modernas que impulsionam o crescimento dos negócios.
+                    </p>
+                    <ul class="cs-service-list">
+                        <li><a href="devsites.html">Desenvolvimento de Sites</a></li>
+                        <li><a href="devaplicativos.html">Desenvolvimento de Apps</a></li>
+                        <li><a href="devsistemas.html">Desenvolvimento de Sistemas</a></li>
+                        <li><a href="ecomer.html">E-commerce</a></li>
+                    </ul>
+                </div>
+                <div class="cs-category-footer">
+                    <a href="devsites.html" class="cs-category-btn">Explorar Serviços</a>
+                </div>
+            </div>
+            
+            <div class="cs-category-card cs-engineering">
+                <div class="cs-category-header">
+                    <div class="cs-category-icon">
+                        <img src="../imgs/icones/maquina-de-fabrica.png" alt="Engenharia" class="cs-icon">
+                    </div>
+                    <h3 class="cs-category-title">Engenharia & Projetos</h3>
+                </div>
+                <div class="cs-category-content">
+                    <p class="cs-category-description">
+                        Projetos mecânicos e elétricos com tecnologia de ponta e máxima eficiência.
+                    </p>
+                    <ul class="cs-service-list">
+                        <li><a href="detalhamento.html">Detalhamento Técnico</a></li>
+                        <li><a href="projmaquinas.html">Projetos de Máquinas</a></li>
+                        <li><a href="proto.html">Prototipagem</a></li>
+                        <li><a href="eficenerg.html">Eficiência Energética</a></li>
+        </ul>
+                </div>
+                <div class="cs-category-footer">
+                    <a href="detalhamento.html" class="cs-category-btn">Explorar Serviços</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Process Section               -->
+<!-- ============================================ -->
+
+<section id="services-process">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">NOSSO PROCESSO</span>
+            <h2 class="cs-title">Como Trabalhamos</h2>
+            <p class="cs-text">
+                Seguimos uma metodologia comprovada para garantir resultados excepcionais em cada projeto.
+            </p>
+        </div>
+        <div class="cs-process-timeline">
+            <div class="cs-process-step">
+                <div class="cs-step-number">01</div>
+                <div class="cs-step-content">
+                    <h3 class="cs-step-title">Análise & Diagnóstico</h3>
+                    <p class="cs-step-description">
+                        Entendemos profundamente suas necessidades e desafios para criar a solução ideal.
+                    </p>
+                </div>
+            </div>
+            <div class="cs-process-step">
+                <div class="cs-step-number">02</div>
+                <div class="cs-step-content">
+                    <h3 class="cs-step-title">Planejamento & Design</h3>
+                    <p class="cs-step-description">
+                        Desenvolvemos um plano detalhado com cronograma e especificações técnicas.
+                    </p>
+                </div>
+            </div>
+            <div class="cs-process-step">
+                <div class="cs-step-number">03</div>
+                <div class="cs-step-content">
+                    <h3 class="cs-step-title">Desenvolvimento</h3>
+                    <p class="cs-step-description">
+                        Implementamos a solução com tecnologia de ponta e acompanhamento constante.
+                    </p>
+                </div>
+            </div>
+            <div class="cs-process-step">
+                <div class="cs-step-number">04</div>
+                <div class="cs-step-content">
+                    <h3 class="cs-step-title">Entrega & Suporte</h3>
+                    <p class="cs-step-description">
+                        Entregamos o projeto e oferecemos suporte contínuo para garantir o sucesso.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Why Choose Us                -->
+<!-- ============================================ -->
+
+<section id="services-why-choose">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">POR QUE ESCOLHER A KONVEX?</span>
+            <h2 class="cs-title">Vantagens Competitivas</h2>
+        </div>
+        <div class="cs-advantages-grid">
+            <div class="cs-advantage-item">
+                <div class="cs-advantage-icon">
+                    <img src="../imgs/icones/inovacao.png" alt="Inovação">
+                </div>
+                <h3 class="cs-advantage-title">Tecnologia de Ponta</h3>
+                <p class="cs-advantage-text">
+                    Utilizamos as mais modernas tecnologias e ferramentas do mercado.
+                </p>
+            </div>
+            <div class="cs-advantage-item">
+                <div class="cs-advantage-icon">
+                    <img src="../imgs/icones/eficiencia.png" alt="Eficiência">
+                </div>
+                <h3 class="cs-advantage-title">Eficiência Comprovada</h3>
+                <p class="cs-advantage-text">
+                    Metodologias ágeis que garantem entregas rápidas e de qualidade.
+                </p>
+            </div>
+            <div class="cs-advantage-item">
+                <div class="cs-advantage-icon">
+                    <img src="../imgs/icones/trust.png" alt="Confiança">
+                </div>
+                <h3 class="cs-advantage-title">Confiança & Transparência</h3>
+                <p class="cs-advantage-text">
+                    Comunicação clara e acompanhamento constante durante todo o projeto.
+                </p>
+            </div>
+            <div class="cs-advantage-item">
+                <div class="cs-advantage-icon">
+                    <img src="../imgs/icones/sustentabilidade.png" alt="Sustentabilidade">
+                </div>
+                <h3 class="cs-advantage-title">Soluções Sustentáveis</h3>
+                <p class="cs-advantage-text">
+                    Desenvolvemos projetos que respeitam o meio ambiente e promovem sustentabilidade.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                WhatsApp Button               -->
+<!-- ============================================ -->
+
+<div class="cs-whatsapp-button">
+    <a href="https://api.whatsapp.com/send?l=pt&phone=5547988765799&text=Ol%C3%A1!%20Me%20conte%20mais%20sobre%20a%20Konvex%20Jr!" target="_blank" class="cs-whatsapp-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp" class="cs-whatsapp-icon">
+        <span class="cs-whatsapp-text">Fale Conosco</span>
+    </a>
+</div>
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="globalStyle.css">
+<footer id="cs-footer-274">
+    <div class="cs-container">
+
+        <!-- Logo -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="/index.html">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/imgs/Horizontal-Original.png" alt="logo" width="240" height="32">
+            </a>
+
+        <!-- Linkedin e Instagram -->
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit linkedin profile" href="https://br.linkedin.com/company/konvex-jr" target="_blank">
+                    <svg class="cs-social-img" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382 382" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#ffffff;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path> </g></svg>
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/konvexjr.oficial/" target="_blank">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+
+        <!-- Páginas -->
+         <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Páginas</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/index.html">Início</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/sobre-nos.html">Sobre Nós</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/servicos/servicos.html">Serviços</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/diagnostico.html">Diagnóstico Gratuito</a>
+            </li>
+        </ul>
+
+        <!-- Serviços -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Nossos serviços</span>
+            </li> 
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/servicos/devsites.html">Desenvolvimento de Sites</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/servicos/devaplicativos.html">Desenvolvimento de Apps</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/servicos/devsistemas.html">Desenvolvimento de Sistemas</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/servicos/ecomer.html">E-commerce</a>
+            </li>
+            </li>
+        </ul>
+
+        <!-- Contato -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contato</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="https://api.whatsapp.com/send?l=pt&phone=5547988765799&text=Ol%C3%A1!%20Me%20conte%20mais%20sobre%20a%20Konvex%20Jr!">(47) 98876-5799</a>
+            </li>
+            <li class="cs-nav-li">
+                <p >gabriel.mergenthaler@konvexjr.com.br</p>
+            </li>
+            <li class="cs-nav-li">
+                <p href="">R. Paulo Malschitzki, 200, Sala I308 - <br>Zona Ind. Norte, Joinville - SC, 89219-710</p>
+            </li>
+        </ul>
+    </div>
+</footer>
+                                
+  <script src="../js/global.js"></script>
+</body>

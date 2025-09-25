@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global_temas.css">
+    <link rel="stylesheet" href="css/sobre-nos.css">
+    <title>Sobre Nós</title>
+</head>
+
+<body>
+
+    <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="/index.html" class="cs-logo" aria-label="back to home">
+            <img src="imgs/Horizontal-Original.png" alt="logo"aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-li-link">
+                            Início
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="sobre-nos.html" class="cs-li-link  cs-active">
+                            Sobre Nós
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Serviços
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="servicos/comp.html" class="cs-li-link cs-drop-link">Computação e Sistemas</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="servicos/maquinas.html" class="cs-li-link cs-drop-link">Processos Mecânicos e eletrônicos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../blog.html" class="cs-li-link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../contato.html" class="cs-li-link">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <div class="cs-social">
+                <a href="https://www.facebook.com/konvexjr/" class="cs-social-link" target="_blank">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://www.instagram.com/konvexjr.oficial/" class="cs-social-link" target="_blank">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://br.linkedin.com/company/konvex-jr" class="cs-social-link" target="_blank">
+                    <svg class="cs-social-icon" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382.00 382.00" xml:space="preserve" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#5c5c5c;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path> </g></svg>
+                </a>
+            </div>
+            
+        </div>
+
+</header>
+
+    <!--BLOCO 1-->
+    
+    <section id="hero-408" style="padding-bottom: 0;" >
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title"><span class="cs-color">Transformamos Conhecimento</span> em Impacto Real</h2>
+                <p class="cs-text">
+                    Desde 1996, unimos inovação, excelência técnica e espírito empreendedor para impulsionar empresas,
+                    formar líderes e transformar a sociedade. Conheça a Konvex Júnior: onde ideias se tornam soluções.</p>
+                <a href="" class="cs-button-solid">Contato</a>
+                <a href="" class="cs-button-transparent">Nossos Serviços</a>
+            </div>
+            <div class="cs-stat-group">
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="imgs/index/time.jpg">
+                    <source media="(min-width: 601px)" srcset="imgs/index/time.jpg">
+                    <img loading="lazy" decoding="async" src="imgs/index/time.jpg" alt="leaves" width="842" height="737" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BLOCO 2/3-->
+    
+    <section id="RPsbs-1593" style="padding-bottom: 0;">
+        <div class="cs-container">
+            <div>
+                <picture class="cs-picturee">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg" alt="mechanic"
+                        width="413" height="500" style="margin-left: 100px;">
+                </picture>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Konvex jr.</span>
+                <h2 class="cs-title">Nossa História</h2>
+                <p class="cs-text-large">
+                        Fundada em 1996, a Konvex Consultoria nasceu com o propósito de integrar o conhecimento técnico à
+                        prática empresarial. Criada dentro da UDESC/CCT em Joinville/SC, desde o início atua nas áreas de
+                        Engenharia Elétrica, Engenharia Mecânica e Tecnologia da Informação, promovendo impacto real em
+                        empresas, no meio acadêmico e na sociedade.
+                        <br>
+                        <br>
+                        Com mais de 160 projetos realizados, contribuímos para a melhoria de processos, aumento de
+                        lucratividade e desenvolvimento social. Nossa trajetória é marcada pela formação de líderes, hoje
+                        presentes em grandes empresas, conduzindo projetos de alto valor agregado ou empreendendo com
+                        sucesso.
+                </p>
+            </div>
+        </div>
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">konvex jr.</span>
+                <h2 class="cs-title">Evolução e Transformação</h2>
+                <p class="cs-text-large">
+                    Sempre em sintonia com a inovação, em 2020, a Konvex passou por uma profunda renovação: reformulamos
+                    nossa identidade visual, modernizamos nossa sede e nos consolidamos como Konvex Júnior. Essa
+                    transformação reforçou nossa missão de impulsionar ideias, desenvolver talentos e gerar impacto
+                    positivo para nossos clientes e para a sociedade.
+                    <br>
+                    <br>
+                    Mantemos viva nossa essência: crescer de forma colaborativa, resolver desafios e cultivar o espírito
+                    de inovação que sempre nos acompanhou.
+
+                </p>
+            </div>
+            <div class="">
+                <div>
+                    <picture class="cs-picturee">
+                       <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg"
+                            alt="mechanic" width="413" height="500" style="margin-right: 100px;">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BLOCO 4-->
+    
+    <section id="stats-888" style="padding-bottom: 0; padding-top: 0;">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">konvex jr.</span>
+                <h2 class="cs-title">Nossos Valores</h2>
+                <p class="cs-text-large">
+                    União, compromisso, Proatividade, Transparencia, Ambição e Orgulho
+                </p>
+                <p class="cs-text-large">
+                    São os princípios que unem os membros, orientam o propósito do trabalho e fortalecem o compromisso com o crescimento pessoal, impacto social e excelência nos projetos.
+                </p>            
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-number">União</span>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">Orgulho</span>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">Ambição</span>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">Transparência</span>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">Proatividade</span>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">Compromisso</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- BLOCO 5 -->
+    
+    <section id="sbs-r-1892" style="padding-bottom: 0;">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/derma-sbs-1.png">                    
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/derma-sbs-1.png">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/derma-sbs-1.png"
+                        alt="dermatologist" width="324" height="467">
+                </picture>
+            </div>
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">KONVEX JR</span>
+                    <span class="cs-topper"></span>
+                    <h2 class="cs-title">O que nos motiva?</h2>
+                </div>
+                <h4 class="titulo_meio">Nossa missão:</h4>
+                <p class="cs-text-large">
+                    Nosso propósito é desenvolver lideranças verdadeiramente comprometidas, preparadas para enfrentar os
+                    desafios do mundo real e capazes de transformar o Brasil por meio da vivência empresarial.<br>
+                    Queremos formar pessoas que não apenas ocupem posições de liderança, mas que sejam protagonistas da
+                    mudança, deixando um legado positivo em suas empresas, comunidades e na sociedade como um todo.
+                </p>
+                <h4 class="titulo_meio">Nossa visão:</h4>
+                <p class="cs-text-large">
+                    Buscamos impactar a sociedade e o mercado formando membros altamente capacitados, que atuem com
+                    excelência e protagonismo. Por meio de soluções inovadoras, queremos gerar transformação real,
+                    contribuindo para o desenvolvimento sustentável de pessoas, organizações e do nosso país.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO 6 -->
+
+    <section id="services-1829" style="padding-top: 10px; padding-bottom: 0;">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">KONVEX JR</span>
+                <h2 class="cs-title">Conheça nosso time!</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">  
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm1.png">  
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm1.png">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm1.png" alt="person"
+                                width="300" height="500">
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Medical</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">         
+                            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm2.png">                           
+                            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm2.png">
+                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm2.png" alt="person" width="300"
+                                height="500">
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Cosmetic</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm3.png">     
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm3.png">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm3.png" alt="person"
+                                width="300" height="500">
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Surgical</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm4.png">
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm4.png">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm4.png" alt="person"
+                                width="300" height="500">
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Skincare</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">           
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm1.png">                      
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm1.png">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm1.png" alt="person"
+                                width="300" height="500">
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Medical</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">  
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm2.png">                        
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm2.png">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm2.png" alt="person"
+                                width="300" height="500">
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Cosmetic</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">        
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm3.png">   
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm3.png">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm3.png" alt="person"
+                                width="300" height="500">
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Surgical</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm4.png">
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm4.png">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/derm4.png" alt="person"
+                                width="300" height="500">
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Skincare</h3>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+<!-- BLOCO 7 -->
+
+    <section id="timeline-1517" style="padding-top: 70px">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">Konvex jr</span>
+                    <h2 class="cs-title">Nossa linha do tempo</h2>
+                    <p class="cs-text-large">
+                        Nossa linha do tempo mostra os feitos que marcaram nossa história, evidenciando cada passo da nossa evolução. Ela representa o crescimento, os aprendizados e as conquistas que construíram quem somos hoje, servindo como inspiração para continuarmos gerando impacto com ainda mais propósito.
+                    </p>
+                </div>
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/cert1.png" alt="certification" width="199" height="140" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <picture class="cs-picture">
+                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/cert2.png" alt="certification" width="199" height="140" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <picture class="cs-picture">
+                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/cert2.png" alt="certification" width="199" height="140" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-date">July 2018</span>
+                    <h3 class="cs-h3">Computer Science</h3>
+                    <p class="cs-item-text">
+                        Canadian National University
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-date">July 2018</span>
+                    <h3 class="cs-h3">Computer Science</h3>
+                    <p class="cs-item-text">
+                        Canadian National University
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-date">July 2018</span>
+                    <h3 class="cs-h3">Computer Science</h3>
+                    <p class="cs-item-text">
+                        Canadian National University
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-date">July 2018</span>
+                    <h3 class="cs-h3">Computer Science</h3>
+                    <p class="cs-item-text">
+                        Canadian National University
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="globalStyle.css">
+<footer id="cs-footer-274">
+    <div class="cs-container">
+
+        <!-- Logo -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="/index.html">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/imgs/Horizontal-Original.png" alt="logo" width="240" height="32">
+            </a>
+
+        <!-- Linkedin e Instagram -->
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit linkedin profile" href="https://br.linkedin.com/company/konvex-jr" target="_blank">
+                    <svg class="cs-social-img" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382 382" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#ffffff;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path> </g></svg>
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/konvexjr.oficial/" target="_blank">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+
+        <!-- Páginas -->
+         <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Páginas</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/index.html">Início</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/sobre-nos.html">Sobre Nós</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/servicos/servicos.html">Serviços</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/Blog.html">Blog</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/Contato.html">Contato</a>
+            </li>
+        </ul>
+
+        <!-- Serviços -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Nossos serviços</span>
+            </li> 
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/servicos/comp.html">Serviços de Computação</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/servicos/maquinas.html">Serviços de Engenharias</a>
+            </li>
+            </li>
+        </ul>
+
+        <!-- Contato -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contato</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="https://api.whatsapp.com/send?l=pt&phone=5547988765799&text=Ol%C3%A1!%20Me%20conte%20mais%20sobre%20a%20Konvex%20Jr!">(47) 98876-5799</a>
+            </li>
+            <li class="cs-nav-li">
+                <p >gabriel.mergenthaler@konvexjr.com.br</p>
+            </li>
+            <li class="cs-nav-li">
+                <p href="">R. Paulo Malschitzki, 200, Sala I308 - <br>Zona Ind. Norte, Joinville - SC, 89219-710</p>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

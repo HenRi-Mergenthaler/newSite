@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global_temas.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/estilos-servicos/devaplicativos.css">
+    <title>Desenvolvimento de Aplicativos</title>
+</head>
+<body>
+    <!-- ============================================ -->
+<!--                 Navigation- pagina servicos                 -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="/index.html" class="cs-logo" aria-label="back to home">
+            <img src="../imgs/Horizontal-Original.png" alt="logo"aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="../index.html" class="cs-li-link">
+                            Início
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../sobre-nos.html" class="cs-li-link">
+                            Sobre Nós
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link  cs-active">
+                            Serviços
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="comp.html" class="cs-li-link cs-drop-link">Computação e Sistemas</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="maquinas.html" class="cs-li-link cs-drop-link">Processos Mecânicos e eletrônicos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../blog.html" class="cs-li-link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../contato.html" class="cs-li-link">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <div class="cs-social">
+                <a href="https://www.facebook.com/konvexjr/" class="cs-social-link" target="_blank">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://www.instagram.com/konvexjr.oficial/" class="cs-social-link" target="_blank">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://br.linkedin.com/company/konvex-jr" class="cs-social-link" target="_blank">
+                    <svg class="cs-social-icon" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382.00 382.00" xml:space="preserve" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#5c5c5c;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path> </g></svg>
+                </a>
+            </div>
+            
+        </div>
+
+</header>
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-143">
+    <div class="cs-container">
+        <h1 class="cs-title">Desenvolvimento de Aplicativos</h1>
+        
+        <p class="cs-text">
+                        <a href="" class="cs-button-solid">Contate agora mesmo</a>
+        </p>
+        
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" src="../imgs/servicos/appsimgs.png"> 
+        <source media="(min-width: 601px)" src="../imgs/servicos/appsimgs.png">
+        <img loading="lazy" decoding="async" src="../imgs/servicos/appsimgs.png"alt="kitchen" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="h-services-143">
+    <ul class="cs-card-group">
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="../imgs/icones/app.png" alt="icon" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Acessibilidade</h2>
+            <p class="cs-text">
+                Torne seu negócio acessível em meios mobile
+            </p>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="../imgs/icones/trust.png" alt="icon" width="52" height="52" aria-hidden="thttps://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen-m.jpgrue">
+            </picture>
+            <h2 class="cs-title">Credibilidade</h2>
+            <p class="cs-text">
+                Negócios bem posicionados em todas as plataformas, atingindo mais pessoas
+            </p>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="../imgs/icones/puzzle-piece.png" alt="icon" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Adaptabilidade</h2>
+            <p class="cs-text">
+                Divulgue ainda mais o seu negócio e o posicione</p>
+        </li>
+
+    </ul>
+</section>
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="globalStyle.css">
+<footer id="cs-footer-274">
+    <div class="cs-container">
+
+        <!-- Logo -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="/index.html">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/imgs/Horizontal-Original.png" alt="logo" width="240" height="32">
+            </a>
+
+        <!-- Linkedin e Instagram -->
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit linkedin profile" href="https://br.linkedin.com/company/konvex-jr" target="_blank">
+                    <svg class="cs-social-img" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382 382" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#ffffff;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path> </g></svg>
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/konvexjr.oficial/" target="_blank">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+
+        <!-- Páginas -->
+         <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Páginas</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/index.html">Início</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/sobre-nos.html">Sobre Nós</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/servicos/servicos.html">Serviços</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/Blog.html">Blog</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/Contato.html">Contato</a>
+            </li>
+        </ul>
+
+        <!-- Serviços -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Nossos serviços</span>
+            </li> 
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/servicos/comp.html">Serviços de Computação</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/servicos/maquinas.html">Serviços de Engenharias</a>
+            </li>
+            </li>
+        </ul>
+
+        <!-- Contato -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contato</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="https://api.whatsapp.com/send?l=pt&phone=5547988765799&text=Ol%C3%A1!%20Me%20conte%20mais%20sobre%20a%20Konvex%20Jr!">(47) 98876-5799</a>
+            </li>
+            <li class="cs-nav-li">
+                <p >gabriel.mergenthaler@konvexjr.com.br</p>
+            </li>
+            <li class="cs-nav-li">
+                <p href="">R. Paulo Malschitzki, 200, Sala I308 - <br>Zona Ind. Norte, Joinville - SC, 89219-710</p>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+
+<script src="../js/index.js"></script>
+    <script src="../js/global.js"></script>
+                                
+       
+    

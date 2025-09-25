@@ -1,0 +1,557 @@
+/*-- -------------------------- -->
+<---      Services Page         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    /* Services Hero */
+    #services-hero {
+        padding: clamp(8rem, 20vw, 12rem) 1rem clamp(4rem, 10vw, 6rem);
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    #services-hero .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    #services-hero .cs-content {
+        text-align: center;
+        width: 100%;
+        max-width: 50rem;
+    }
+
+    #services-hero .cs-title {
+        color: var(--bodyTextColorWhite);
+        margin-bottom: 1.5rem;
+    }
+
+    #services-hero .cs-text {
+        color: var(--bodyTextColorWhite);
+        opacity: 0.9;
+        font-size: clamp(1rem, 2.5vw, 1.25rem);
+        margin-bottom: 2rem;
+    }
+
+    #services-hero .cs-hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    #services-hero .cs-stat-item {
+        text-align: center;
+    }
+
+    #services-hero .cs-stat-number {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: var(--bodyTextColorWhite);
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+
+    #services-hero .cs-stat-label {
+        font-size: 0.9rem;
+        color: var(--bodyTextColorWhite);
+        opacity: 0.8;
+    }
+
+    #services-hero .cs-hero-visual {
+        width: 100%;
+        max-width: 25rem;
+        position: relative;
+    }
+
+    #services-hero .cs-floating-cards {
+        position: relative;
+        height: 300px;
+    }
+
+    #services-hero .cs-card {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        transition: all 0.3s ease;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    #services-hero .cs-card:hover {
+        transform: scale(1.05);
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    #services-hero .cs-card-1 {
+        top: 0;
+        left: 0;
+        animation-delay: 0s;
+    }
+
+    #services-hero .cs-card-2 {
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        animation-delay: 1s;
+    }
+
+    #services-hero .cs-card-3 {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        animation-delay: 2s;
+    }
+
+    #services-hero .cs-card-icon {
+        width: 3rem;
+        height: 3rem;
+        filter: brightness(0) invert(1);
+    }
+
+    #services-hero .cs-card-text {
+        color: var(--bodyTextColorWhite);
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    #services-hero .cs-background-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        z-index: 1;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    /* Services Categories */
+    #services-categories {
+        padding: var(--sectionPadding);
+        background-color: #f8f9fa;
+    }
+
+    #services-categories .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+    }
+
+    #services-categories .cs-content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    #services-categories .cs-categories-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+    }
+
+    #services-categories .cs-category-card {
+        grid-column: span 12;
+        background: #fff;
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    #services-categories .cs-category-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 106, 62, 0.1), transparent);
+        transition: left 0.6s;
+    }
+
+    #services-categories .cs-category-card:hover::before {
+        left: 100%;
+    }
+
+    #services-categories .cs-category-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    #services-categories .cs-category-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #services-categories .cs-category-icon {
+        width: 4rem;
+        height: 4rem;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    #services-categories .cs-icon {
+        width: 2rem;
+        height: 2rem;
+        filter: brightness(0) invert(1);
+    }
+
+    #services-categories .cs-category-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--headerColor);
+        margin: 0;
+    }
+
+    #services-categories .cs-category-description {
+        color: var(--bodyTextColor);
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+
+    #services-categories .cs-service-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2rem 0;
+    }
+
+    #services-categories .cs-service-list li {
+        margin-bottom: 0.75rem;
+    }
+
+    #services-categories .cs-service-list a {
+        color: var(--bodyTextColor);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+
+    #services-categories .cs-service-list a::before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        color: var(--primary);
+        transition: transform 0.3s;
+    }
+
+    #services-categories .cs-service-list a:hover {
+        color: var(--primary);
+    }
+
+    #services-categories .cs-service-list a:hover::before {
+        transform: translateX(5px);
+    }
+
+    #services-categories .cs-category-btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+
+    #services-categories .cs-category-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(255, 106, 62, 0.3);
+    }
+
+    /* Process Section */
+    #services-process {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+    }
+
+    #services-process .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+    }
+
+    #services-process .cs-content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    #services-process .cs-process-timeline {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+    }
+
+    #services-process .cs-process-step {
+        grid-column: span 12;
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding: 2rem;
+        background: #f8f9fa;
+        border-radius: 1rem;
+        transition: all 0.3s;
+    }
+
+    #services-process .cs-process-step:hover {
+        background: #e9ecef;
+        transform: translateY(-5px);
+    }
+
+    #services-process .cs-step-number {
+        width: 3rem;
+        height: 3rem;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+    }
+
+    #services-process .cs-step-content {
+        flex: 1;
+    }
+
+    #services-process .cs-step-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--headerColor);
+        margin-bottom: 0.5rem;
+    }
+
+    #services-process .cs-step-description {
+        color: var(--bodyTextColor);
+        line-height: 1.6;
+    }
+
+    /* Why Choose Us */
+    #services-why-choose {
+        padding: var(--sectionPadding);
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+
+    #services-why-choose .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+    }
+
+    #services-why-choose .cs-content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    #services-why-choose .cs-advantages-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+    }
+
+    #services-why-choose .cs-advantage-item {
+        grid-column: span 12;
+        text-align: center;
+        padding: 2rem;
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s;
+    }
+
+    #services-why-choose .cs-advantage-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    #services-why-choose .cs-advantage-icon {
+        width: 4rem;
+        height: 4rem;
+        margin: 0 auto 1.5rem;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #services-why-choose .cs-advantage-icon img {
+        width: 2rem;
+        height: 2rem;
+        filter: brightness(0) invert(1);
+    }
+
+    #services-why-choose .cs-advantage-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--headerColor);
+        margin-bottom: 1rem;
+    }
+
+    #services-why-choose .cs-advantage-text {
+        color: var(--bodyTextColor);
+        line-height: 1.6;
+    }
+
+    /* WhatsApp Button */
+    .cs-whatsapp-button {
+        position: fixed;
+        bottom: 2rem;
+        left: 2rem;
+        z-index: 1000;
+        animation: pulse 2s infinite;
+    }
+
+    .cs-whatsapp-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        background-color: #25d366;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+        transition: all 0.3s;
+    }
+
+    .cs-whatsapp-link:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+    }
+
+    .cs-whatsapp-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .cs-whatsapp-text {
+        font-size: 0.9rem;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    /* Diagnostic Button in Navigation */
+    .cs-diagnostic-btn {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%) !important;
+        color: #fff !important;
+        padding: 0.75rem 1.5rem !important;
+        border-radius: 2rem !important;
+        font-weight: 600 !important;
+        font-size: 0.9rem !important;
+        text-decoration: none !important;
+        transition: all 0.3s !important;
+        box-shadow: 0 4px 15px rgba(255, 106, 62, 0.3) !important;
+    }
+
+    .cs-diagnostic-btn:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 25px rgba(255, 106, 62, 0.4) !important;
+    }
+
+    /* Mobile Navigation Adjustments */
+    @media only screen and (max-width: 63.9375rem) {
+        .cs-diagnostic-btn {
+            display: none !important;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-hero .cs-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    #services-hero .cs-content {
+        text-align: left;
+        flex: 1;
+    }
+
+    #services-hero .cs-hero-visual {
+        flex: 1;
+        max-width: none;
+    }
+
+    #services-categories .cs-category-card {
+        grid-column: span 6;
+    }
+
+    #services-process .cs-process-step {
+        grid-column: span 6;
+    }
+
+    #services-why-choose .cs-advantage-item {
+        grid-column: span 6;
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #services-hero {
+        padding: clamp(10rem, 15vw, 15rem) 1rem clamp(6rem, 8vw, 8rem);
+    }
+
+    #services-process .cs-process-step {
+        grid-column: span 3;
+    }
+
+    #services-why-choose .cs-advantage-item {
+        grid-column: span 3;
+    }
+
+    .cs-whatsapp-button {
+        bottom: 3rem;
+        left: 3rem;
+    }
+}

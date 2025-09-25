@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global_temas.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/estilos-servicos/devsites.css">
+    <title>Desenvolvimento de Sites</title>
+</head>
+<body>
+    <!-- ============================================ -->
+<!--                 Navigation- pagina servicos                 -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="/index.html" class="cs-logo" aria-label="back to home">
+            <img src="../imgs/Horizontal-Original.png" alt="logo"aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="../index.html" class="cs-li-link">
+                            Início
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../sobre-nos.html" class="cs-li-link">
+                            Sobre Nós
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link  cs-active">
+                            Serviços
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="devsites.html" class="cs-li-link cs-drop-link cs-active">Desenvolvimento de Sites</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="devaplicativos.html" class="cs-li-link cs-drop-link">Desenvolvimento de Apps</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="devsistemas.html" class="cs-li-link cs-drop-link">Desenvolvimento de Sistemas</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="ecomer.html" class="cs-li-link cs-drop-link">E-commerce</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="detalhamento.html" class="cs-li-link cs-drop-link">Detalhamento Técnico</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="projmaquinas.html" class="cs-li-link cs-drop-link">Projetos de Máquinas</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="proto.html" class="cs-li-link cs-drop-link">Prototipagem</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="eficenerg.html" class="cs-li-link cs-drop-link">Eficiência Energética</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../diagnostico.html" class="cs-button-solid cs-diagnostic-btn">
+                            Faça um Diagnóstico Gratuito
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <div class="cs-social">
+                <a href="https://www.facebook.com/konvexjr/" class="cs-social-link" target="_blank">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://www.instagram.com/konvexjr.oficial/" class="cs-social-link" target="_blank">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://br.linkedin.com/company/konvex-jr" class="cs-social-link" target="_blank">
+                    <svg class="cs-social-icon" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382.00 382.00" xml:space="preserve" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#5c5c5c;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path> </g></svg>
+                </a>
+            </div>
+            
+        </div>
+
+</header>
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="service-hero">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">DESENVOLVIMENTO DE SITES</span>
+            <h1 class="cs-title">Sites Modernos que Impulsionam Seu Negócio</h1>
+        <p class="cs-text">
+                Criamos sites responsivos, rápidos e otimizados para conversão, utilizando as mais modernas 
+                tecnologias web para garantir que sua presença digital seja impactante e eficaz.
+            </p>
+            <div class="cs-hero-features">
+                <div class="cs-feature">
+                    <img src="../imgs/icones/easy.png" alt="Fácil" class="cs-feature-icon">
+                    <span class="cs-feature-text">Fácil de Usar</span>
+                </div>
+                <div class="cs-feature">
+                    <img src="../imgs/icones/seguranca.png" alt="Seguro" class="cs-feature-icon">
+                    <span class="cs-feature-text">100% Seguro</span>
+                </div>
+                <div class="cs-feature">
+                    <img src="../imgs/icones/eficiencia.png" alt="Rápido" class="cs-feature-icon">
+                    <span class="cs-feature-text">Super Rápido</span>
+                </div>
+            </div>
+            <a href="../diagnostico.html" class="cs-button-solid">Solicitar Orçamento</a>
+        </div>
+        <div class="cs-hero-visual">
+            <div class="cs-mockup-container">
+                <div class="cs-mockup cs-mockup-desktop">
+                    <img src="../imgs/servicos/desenvolvimento-de-sites.png" alt="Site Desktop" class="cs-mockup-img">
+                </div>
+                <div class="cs-mockup cs-mockup-mobile">
+                    <img src="../imgs/servicos/desenvolvimento-de-sites.png" alt="Site Mobile" class="cs-mockup-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cs-background-pattern"></div>
+</section>
+
+<!-- ============================================ -->
+<!--                Benefits Section              -->
+<!-- ============================================ -->
+
+<section id="service-benefits">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">VANTAGENS</span>
+            <h2 class="cs-title">Por Que Ter um Site Profissional?</h2>
+            <p class="cs-text">
+                Um site bem desenvolvido é a base da sua presença digital e pode transformar completamente 
+                a forma como seus clientes interagem com sua marca.
+            </p>
+        </div>
+        <div class="cs-benefits-grid">
+            <div class="cs-benefit-item">
+                <div class="cs-benefit-icon">
+                    <img src="../imgs/icones/negocios.png" alt="Divulgação">
+                </div>
+                <h3 class="cs-benefit-title">Maior Divulgação</h3>
+                <p class="cs-benefit-text">
+                    Conquiste mais clientes com um site que vende por você 24 horas por dia, 
+                    7 dias por semana, alcançando um público muito maior.
+                </p>
+            </div>
+            <div class="cs-benefit-item">
+                <div class="cs-benefit-icon">
+                    <img src="../imgs/icones/seguranca.png" alt="Segurança">
+                </div>
+                <h3 class="cs-benefit-title">Segurança Total</h3>
+                <p class="cs-benefit-text">
+                    Construa confiança com um espaço seguro e bem explicado sobre seu negócio, 
+                    protegendo dados e informações sensíveis.
+                </p>
+            </div>
+            <div class="cs-benefit-item">
+                <div class="cs-benefit-icon">
+                    <img src="../imgs/icones/credibilidade.png" alt="Credibilidade">
+                </div>
+                <h3 class="cs-benefit-title">Credibilidade</h3>
+                <p class="cs-benefit-text">
+                    Transmita confiança com um site bonito e profissional que demonstra 
+                    seriedade e competência do seu negócio.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Features Section              -->
+<!-- ============================================ -->
+
+<section id="service-features">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">RECURSOS INCLUSOS</span>
+            <h2 class="cs-title">O Que Você Recebe</h2>
+            <p class="cs-text">
+                Nossos sites incluem todos os recursos essenciais para o sucesso online do seu negócio.
+            </p>
+        </div>
+        <div class="cs-features-grid">
+            <div class="cs-feature-card">
+                <div class="cs-feature-header">
+                    <img src="../imgs/icones/personalizacao.png" alt="Design Personalizado" class="cs-feature-img">
+                    <h3 class="cs-feature-title">Design Personalizado</h3>
+                </div>
+                <p class="cs-feature-description">
+                    Layout único e exclusivo, criado especialmente para sua marca e objetivos de negócio.
+                </p>
+            </div>
+            <div class="cs-feature-card">
+                <div class="cs-feature-header">
+                    <img src="../imgs/icones/easy.png" alt="Responsivo" class="cs-feature-img">
+                    <h3 class="cs-feature-title">100% Responsivo</h3>
+                </div>
+                <p class="cs-feature-description">
+                    Funciona perfeitamente em todos os dispositivos: desktop, tablet e smartphone.
+                </p>
+            </div>
+            <div class="cs-feature-card">
+                <div class="cs-feature-header">
+                    <img src="../imgs/icones/eficiencia.png" alt="Performance" class="cs-feature-img">
+                    <h3 class="cs-feature-title">Alta Performance</h3>
+                </div>
+                <p class="cs-feature-description">
+                    Sites otimizados para carregamento rápido e melhor experiência do usuário.
+                </p>
+            </div>
+            <div class="cs-feature-card">
+                <div class="cs-feature-header">
+                    <img src="../imgs/icones/seguranca.png" alt="Segurança" class="cs-feature-img">
+                    <h3 class="cs-feature-title">Segurança Avançada</h3>
+                </div>
+                <p class="cs-feature-description">
+                    Proteção contra ataques e certificado SSL para máxima segurança dos dados.
+                </p>
+            </div>
+            <div class="cs-feature-card">
+                <div class="cs-feature-header">
+                    <img src="../imgs/icones/checklist.png" alt="SEO" class="cs-feature-img">
+                    <h3 class="cs-feature-title">SEO Otimizado</h3>
+                </div>
+                <p class="cs-feature-description">
+                    Estrutura otimizada para mecanismos de busca, aumentando sua visibilidade online.
+                </p>
+            </div>
+            <div class="cs-feature-card">
+                <div class="cs-feature-header">
+                    <img src="../imgs/icones/trust.png" alt="Suporte" class="cs-feature-img">
+                    <h3 class="cs-feature-title">Suporte Contínuo</h3>
+                </div>
+                <p class="cs-feature-description">
+                    Acompanhamento e suporte técnico para garantir que tudo funcione perfeitamente.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Process Section               -->
+<!-- ============================================ -->
+
+<section id="service-process">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">NOSSO PROCESSO</span>
+            <h2 class="cs-title">Como Desenvolvemos Seu Site</h2>
+            <p class="cs-text">
+                Seguimos uma metodologia comprovada para criar sites que realmente funcionam para seu negócio.
+            </p>
+        </div>
+        <div class="cs-process-timeline">
+            <div class="cs-process-step">
+                <div class="cs-step-number">01</div>
+          
